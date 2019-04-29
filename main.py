@@ -36,6 +36,18 @@ def home():
 @app.route('/about')
 def about():
     return render_template('about.html', title='About') 
+@app.route('/memes')
+def memes():
+    return render_template('memes.html', title='Memes') 
+@app.route('/gifs')
+def gifs():
+    return render_template('gifs.html', title='Gifs') 
+@app.route('/network')
+def network():
+    return render_template('network.html', title='Network') 
+@app.route('/youtube')
+def youtube():
+    return render_template('youtube.html', title='Youtube') 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():

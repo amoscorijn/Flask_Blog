@@ -3,7 +3,7 @@ from flask import Flask, render_template, url_for, flash, redirect
 #from flask_sqlalchemy import * 
 from forms import RegistrationForm, LoginForm
 
-#app = Flask(__name__)
+app = Flask(__name__)
 app.config['SECRET_KEY'] = '86f41a39c3a243fd22d96228eaeb23a60df36e76'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 #db = SQLAlchemy(app)

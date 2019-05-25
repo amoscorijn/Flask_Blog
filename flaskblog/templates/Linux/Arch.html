@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2">Amos Corijn</a>
+              <small class="text-muted"></small>
+            </div>
+            <h4><a class="article-title" href="#">Installing Arch Linux</a></h4>
+            <p class="article-content">Alright fools. The first thing you HAVE to do is know how to RTFM. If you don't know what that means, then you've already sunk your weakass battleship into the depths of being a noob. 
+            <br>Since I'm not a noob (I'm definitely a noob), open the Arch Linux Wiki installation guide <a href=https://wiki.archlinux.org/index.php/installation_guide">CLICK ME!</a>
+            <br>
+                <br>1) NUMBA ONE - Get the image file for ArchLinux, I just grabbed the latest one on the Arch Linux download page.
+                <br>2) DEUX - Create a bootable USB with the image (You will need to be an admin for this) and type the following. Again, if you are curious as to what these ACTUALLY do I highly suggest googling them. I will provide some resources at the end:
+                <br>        - diskutil list  
+                <br>        - diskutil unmount disk# (Choose the one that is the USB drive after finding it in diskutil list)
+                <br>        - sudo dd if=/Users/amos/Downloads/ArchLinux.iso of=/dev/disk2 bs=8m 
+                <br>        - It will take about 5 minutes to complete. Once it is done type diskutil eject disk#
+                <br>
+                <br>3) SAN - Now that you got your bootable USB, plug that shit into the computer you want to install Arch Linux on and boot it up
+                <br>4) FOUR - Enter boot mode, you gotta press f11 or esc or some other key. Just mash whatever key it is to get into boot mode
+                <br>5) Wow I just noticed I'm typing out the number twice. Anyways choose the Arch Linux iso to boot it up.
+                <br>6) You should now be at a terminal window. This is the installation screen for Arch!! Completely on the terminal!
+                <br>7) At this point, since this is just a history of notes for myself for my future self in case I ever do this again.
+                <br>
+                <br>With that said; future Amos = RTFM
+            </p>
+</article>
+{% endblock content %}
